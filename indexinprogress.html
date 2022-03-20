@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {
+margin: 0;
+font-family: Arial;
+}
+.header {
+left: 50%;
+background-color: white;
+padding: 20px 10px;
+}
+.header a {
+color: black;
+left: 50%;
+text-align: center;
+padding: 12px;
+text-decoration: none;
+font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+font-size: 25px;
+line-height: 25px;
+border-radius: 5px;
+}
+.header a:hover {
+color: #7DF599;
+}
+.headera.active {
+background-color: green;
+color: white;
+}
+.header-right {
+left: 50%;
+}
+
+.container {
+  position: relative;
+  left: 36%;
+  top: 50px;
+}
+
+.image {
+  display: block;
+  width: 30%;
+  border-style: solid;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 30%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #7DF599;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-family:Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  font-size: 20px;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text2{
+  color: white;
+  font-family:Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  font-size: 15px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text3{
+  color: white;
+  font-family:Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  font-size: 15px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text4{
+  color: white;
+  font-family:Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  font-size: 15px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.column {
+  float:left;
+  width: 33.33%;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  text-align: center;
+  font-family:Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+}
+
+</style>
+</head>
+<body>
+<div class="header">
+<!--<img src ="\Users\Petter\46818.png" class="logo" style="width:150px;height:150px;">-->
+<div class="header-right" style="text-align: center;">
+<a class="active" href="#home">Home</a>
+<a href="timeline.html">Timeline</a>
+<a href="about.html">About</a>
+</div>
+</div>
+<div style="text-align: center; padding-top:5px; padding-bottom:5px; background-color:#7DF599;font-family:Century Gothic, CenturyGothic, AppleGothic, sans-serif;">
+<h1>D.E.C.H.O</h1>
+<h3>Data recording of Excavator Canbus for Hydrogen Operation</h3>
+<div style="color:red;">
+<h3>NB: UNDER DEVELOPMENT</h3>
+</div>
+</div>
+<div class="row">
+  <div class="column">
+    <div class="container">
+      <img src="\Users\Petter\Downloads\Abdirahman profil.png" alt="Avatar" class="image">
+      <div class="overlay">
+        <div class="text">Abdirahman Ali</div>
+        <div class="text2">Project Lead<br>Software Architect</div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="container">
+      <img src="\Users\Petter\Downloads\Petter profil.png" alt="Avatar" class="image">
+      <div class="overlay">
+        <div class="text">Petter Tveit</div>
+        <div class="text3">Documentation Lead<br>Software Architect</div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="container">
+      <img src="\Users\Petter\Downloads\Mahram profil.png" alt="Avatar" class="image">
+      <div class="overlay">
+        <div class="text">Mahram Safdari</div>
+        <div class="text4">Test Lead</div>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br><br>
+<div class="row">
+  <div class="column">
+    <div class="container">
+      <img src="\Users\Petter\Downloads\Salem profil.png" alt="Avatar" class="image">
+      <div class="overlay">
+        <div class="text">Salem Rezaie</div>
+        <div class="text2">Scrum Master Software Architect</div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="container">
+      <img src="\Users\Petter\Downloads\Markus profil.png" alt="Avatar" class="image">
+      <div class="overlay">
+        <div class="text">Markus Danielsen</div>
+        <div class="text3">Design Lead<br>Requirements Lead</div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="container">
+      <img src="\Users\Petter\Downloads\Fouad profil.png" alt="Avatar" class="image">
+      <div class="overlay">
+        <div class="text">Fouad Irkayek</div>
+        <div class="text4">Risk Lead</div>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br><br><br>
+
+<footer>
+  <p>Copyright © D.E.C.H.O, 2022</p>
+</footer>
+
+</body>
+</html>
